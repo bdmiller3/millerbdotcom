@@ -56,9 +56,7 @@ table {
 /* border-box for sizing */
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -68,6 +66,14 @@ table {
   padding-right: 30px;
 }
 
+header {
+  margin-bottom: 22px;
+}
+
+footer {
+  margin-top: 22px;
+}
+
 /*
   ========================================
   Typography
@@ -75,4 +81,18 @@ table {
 */
 h1, h2, h3, h4, h5, p {
   margin-bottom: 22px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
 }

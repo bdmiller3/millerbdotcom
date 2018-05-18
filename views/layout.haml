@@ -1,0 +1,23 @@
+!!!
+%html{ lang: "en" }
+  %head
+    %meta{ charset: "utf-8" }
+    %link{ rel: 'stylesheet', href: "stylesheets/main.css"}
+    %title millerb.com
+  %body
+    %header
+      %h1.logo millerb.com
+
+      %nav
+        %a{ href: "/"}Home
+        %a{ href: "/about"}About
+        %a{ href: "/contact"}Contact
+
+    =yield
+
+    %footer
+      %small &copy; Benjamin Miller, 2018
+      %nav
+        %a{ href: "/"}Home
+        %a{ href: "/about"}About
+        %a{ href: "/contact"}Contact
