@@ -2,6 +2,5 @@
 require 'sinatra'
 
 get '/' do
-  'Hello, world!'
+  haml :index, format: :html5
 end
-
