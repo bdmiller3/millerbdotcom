@@ -63,6 +63,10 @@ body {
   margin: 1em auto;
 }
 
+nav a {
+  font-size: 18px;
+}
+
 li {
   display: list-item;
   list-style-type: disc;
@@ -109,4 +113,37 @@ h2 {
 
 h3 {
     font-size: 1.17em;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  background-color: black;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #94aea3;
+}
+
+.logo {
+  font-family: "Courier New"
+}
+
+/*
+  ========================================
+  Images
+  ========================================
+*/
+
+.technologies {
+  display: inline-block;
 }
