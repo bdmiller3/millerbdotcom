@@ -123,6 +123,7 @@ h3 {
 header {
   background-color: black;
   color: white;
+  border-bottom: 0.2em solid green;
 }
 
 header a {
