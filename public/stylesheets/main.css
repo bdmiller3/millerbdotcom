@@ -47,10 +47,9 @@ table {
   border-spacing: 0;
 }
 
-
 /*
   ========================================
-  Grid
+  General
   ========================================
 */
 /* border-box for sizing */
@@ -59,19 +58,33 @@ table {
   box-sizing: border-box;
 }
 
-.container {
-  margin: 0 auto;
-  width: 960px;
-  padding-left: 30px;
-  padding-right: 30px;
+body {
+  font-size: 18px;
+  margin: 1em auto;
 }
 
-header {
-  margin-bottom: 22px;
+li {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 0.5em auto;
+  padding-left: 2.5em;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 1.7em;
+  padding-right: 1.7em;
 }
 
 footer {
-  margin-top: 22px;
+  margin-top: 1em;
 }
 
 /*
@@ -79,20 +92,21 @@ footer {
   Typography
   ========================================
 */
-h1, h2, h3, h4, h5, p {
-  margin-bottom: 22px;
+h2, h3, h4, h5, p {
+  margin: 1em auto;
 }
 
 h1 {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
 }
 
 h2 {
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 1.34em;
+    line-height: 2.45em;
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 1.17em;
 }
