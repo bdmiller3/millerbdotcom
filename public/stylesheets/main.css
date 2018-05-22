@@ -135,7 +135,19 @@ header a:hover {
 }
 
 .logo {
-  font-family: "Courier New"
+  font-family: "Courier New", Courier, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer small {
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /*
