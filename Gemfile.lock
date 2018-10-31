@@ -6,14 +6,14 @@ GEM
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    mustermann (1.0.2)
+    mustermann (1.0.3)
     rack (2.0.5)
-    rack-protection (2.0.1)
+    rack-protection (2.0.4)
       rack
-    sinatra (2.0.1)
+    sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.1)
+      rack-protection (= 2.0.4)
       tilt (~> 2.0)
     temple (0.8.0)
     thin (1.7.2)
@@ -28,7 +28,7 @@ PLATFORMS
 DEPENDENCIES
   haml
   rack
-  sinatra
+  sinatra (>= 2.0.2)
   thin
 
 RUBY VERSION
