@@ -1,162 +1,169 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*
-  ========================================
-  General
-  ========================================
-*/
-/* border-box for sizing */
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+/***** BASE STYLES *****/
 
 body {
-  font-size: 18px;
-  margin: 1em auto;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-nav a {
-  font-size: 18px;
+#about, #work, #contact {
+    height: 500px;
 }
 
-li {
-  display: list-item;
-  list-style-type: disc;
-  list-style-position: inside;
-  margin: 0.5em auto;
-  padding-left: 2.5em;
+/***** GRID *****/
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
 }
 
-/*
-  ========================================
-  Grid
-  ========================================
-*/
-.container {
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 1.7em;
-  padding-right: 1.7em;
+.half-width {
+    width: 600px;
+    margin: 0 auto;
+    float: left;
 }
 
-footer {
-  margin-top: 1em;
+.third-width {
+    width: 400px;
+    margin: 0 auto;
+    float: left;
 }
 
-/*
-  ========================================
-  Typography
-  ========================================
-*/
-h2, h3, h4, h5, p {
-  margin: 1em auto;
+/***** HEADER *****/
+
+header {
+    height: 600px;
+    background: url('../img/hero.jpg');;
+    background-size: cover;
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-    line-height: 1.2em;
+    color: #5196fd;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    padding: 50px 0;
 }
 
-h2 {
-    font-size: 1.34em;
-    line-height: 2.45em;
+nav {
+    float: right;
+    padding: 75px 40px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #828282;
+    padding-left: 80px;
+}
+header h2 {
+    width: auto;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    padding: 20px 0;
+    color: #a3efe2;
+}
+header h2 span {
+    color: #a3efe2;
 }
 
-h3 {
-    font-size: 1.17em;
+/***** ABOUT *****/
+
+#about .full-width {
+    padding: 80px 0;
 }
 
-/*
-  ========================================
-  Header
-  ========================================
-*/
-header {
-  background-color: black;
-  color: white;
-  border-bottom: 0.2em solid green;
+#about h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
 }
 
-header a {
-  color: white;
-  text-decoration: none;
+#about p {
+    font-size: 21px;
+    color: #7F7F7F;
+    line-height: 40px;
+    padding-right: 50px;
 }
 
-header a:hover {
-  color: #94aea3;
+/***** WORK *****/
+
+#work {
+  background-color: #5196fd;
+  text-align: center;
 }
 
-.logo {
-  font-family: "Courier New", Courier, Arial, sans-serif;
+#work .full-width {
+    padding: 115px 0;
 }
 
-/*
-  ========================================
-  Footer
-  ========================================
-*/
-
-footer small {
-  float: left;
-  font-size: 14px;
-  font-weight: 400;
+#work img {
+    padding-bottom: 30px;
+}
+#work h3 {
+    font-size: 24px;
+    width: 400px;
+    margin: 0 auto;
 }
 
-/*
-  ========================================
-  Images
-  ========================================
-*/
+#work p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height:  30px;
+    color: #2B2B2B;
+    padding: 0 35px;
+}
 
-.technologies {
-  display: inline-block;
+/***** CONTACT *****/
+
+#contact {
+    background-color: #EBEBEB;
+}
+
+
+#contact .full-width {
+    padding: 110px 0;
+}
+
+#contact-img {
+    border: 12px solid #ffffff;
+}
+
+#contact h2, #email-header, #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+
+#envelope {
+    padding: 0 10px 0 115px;
+}
+
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+}
+#email-header{
+    font-size: 32px;
+    font-weight: lighter;
+    margin: -30px 0 5px 0;
+}
+#socialmedia-header {
+    font-weight: lighter;
+    font-size: 29px;
+    margin: 40px 0 0 0;
+}
+#contact a {
+    text-decoration: none;
+    color: #849b9f;
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+#contact ul {
+    list-style: none;
+}
+#contact ul li {
+     display: inline-block;
+}
+#contact ul img {
+    padding-right: 48px;
 }

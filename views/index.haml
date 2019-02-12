@@ -1,11 +1,93 @@
-%section
-  %h3 My Goal for millerb.com
-  %p
-    I have a few intentions for this website. The first is to increase my |
-    front-end development skills. The second is to create my own web |
-    presence, independent of social media. Given the recent trend that many |
-    platforms are taking with our data, I decided to see if I could accomplish |
-    everything that something like Facebook gives us, without relying on |
-    someone else to do it for me. This is an ongoing work and a definite |
-    work in progress as I learn more about frontend development. Thanks for |
-    visiting me!
+!!!
+%html{ lang: "en" }
+  %head
+    %meta{ charset: "utf-8" }
+    %link{ rel: 'stylesheet', href: 'stylesheets/normalize.css' }
+    %link{ rel: 'stylesheet', href: 'stylesheets/main.css' }
+    %link{ rel: 'stylesheet', type: 'text/css', href: "https://fonts.googleapis.com/css?family=Lora:400,700"}
+    %link{ rel: 'stylesheet', type: 'text/css', href: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"}
+    %title Benjamin Miller | Software Engineer
+  %body
+    %header
+      %div.full-width
+        %div.half-width
+          %h1 Benjamin Miller
+        %div.half-width
+          %nav
+            %ul
+              %li
+                %a{ href: "#about" }About
+              %li
+                %a{ href: "#work" }Work
+              %li
+                %a{ href: "#contact" }Contact
+        %h2
+          %span Hi,
+
+          I'm a software engineer.
+    %main
+      %section#about
+        %div.full-width
+          %h2 About Me
+          %div.half-width
+            %p
+              I am a husband, father, and software engineer living in Colorado |
+              Springs, CO. I'm a proud graduate of Western Carolina University |
+              who's been in the software industry since 2013. Beginning with   |
+              \.NET development, I quickly jumped to J2EE on Spring and        |
+              Struts, Python and Perl, and SOA development at Red Hat.         |
+              I eventually branched into Ruby on Rails and JavaScript.
+          %div.half-width
+            %p
+              I currently work on backend and devops technologies at InMoment, |
+              while wrestling and bodyslamming legacy code. I pride myself on  |
+              my ability to learn any technology quickly and become an         |
+              immediate boost to any team.
+      %section#work
+        %div.full-width
+          %div.third-width
+            %img{ src: 'img/icon-html.png', alt: 'Console Icon'}
+            %h3 General Skills and Tools
+            %p
+              Linux preferred, Mac OSX tolerated; Ruby, Elixir, |
+              JavaScript, Java, GoLang, Python, Perl, C; Zsh and all *nix |
+              tools, Atom, Vim, IntelliJ
+          %div.third-width
+            %img{ src: 'img/icon-css.png', alt: 'Web Page Icon' }
+            %h3 Speciality Areas
+            %p
+              Full-Stack Web Engineering, SOA/Microservice Architecture, API   |
+              Design, Middleware
+          %div.third-width
+            %img{ src: 'img/icon-pencil.png', alt: 'Pencil Icon' }
+            %h3 Frameworks and Soft Skills
+            %p
+              Ruby on Rails, React/NodeJS, Angular, SQL/NoSQL databases, |
+              Spring, Struts, and anything you need! I |
+              <3 making my co-workers laugh and facilitate healthy, |
+              productive communication between my teammates both within and |
+              outside of my team.
+      %footer#contact
+        %div.full-width
+          %div.half-width
+            %a{ href: 'mailto:bmiller@millerb.com' }
+              %img#contact-img{ src: 'img/contact.jpg', alt: 'Contact' }
+          %div.half-width
+            %h2 Want to collaborate?
+            %h3#email-header Let's meet for a cup of coffee.
+            %a{ href: 'mailto:bmiller@millerb.com'}
+              %img#envelope{ src: 'img/icon-envelope.png', alt: 'Envelope Icon' }
+              bmiller [@] millerb.com
+            %h3#socialmedia-header
+              Or, find me at any of this exciting array of internet websites:
+            %ul
+              %li
+                %a{ href: 'https://www.linkedin.com/in/benjamin-miller-9ba9b9174' }
+                  %img{ src: 'img/icon-linkedin.png', alt: 'LinkedIn Icon' }
+              %li
+                %a{ href: 'https://twitter.com/BenjaminCodes' }
+                  %img{ src: 'img/icon-twitter.png', alt: 'Twitter Icon' }
+              %li
+                %a{ href: 'https://github.com/bdmiller3' }
+                  %img{ src: 'img/icon-github.png', alt: 'Github Icon' }
+      %small &copy; Benjamin Miller with design by Xinaxran, 2019
